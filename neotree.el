@@ -1,2 +1,2 @@
 (require 'neotree)
-(global-set-key (kbd "M-n M-n") 'neotree-toggle)
+(global-set-key (kbd "C-c o") 'neotree-toggle)
