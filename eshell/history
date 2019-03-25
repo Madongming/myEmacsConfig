@@ -1,0 +1,128 @@
+rm -f model.go
+rm -f model.go\~ 
+ls
+rm -f main.go
+cd ..
+cd cmds/
+ls
+cd cloud-codepipeline-runner/
+ls
+cat main.go 
+cp ../cloud-codepipeline-service/main.go .
+cd ..
+cd cloud-codepipeline-api/
+ls
+cd global/
+ls
+cp config.go ../../cloud-codepipeline-runner/
+cp config.go ../../cloud-codepipeline-service/
+cd ..
+ls
+cd ..
+cd cloud-codepipeline-runner/
+ls
+cat ../cloud-codepipeline-api/global/const.go >> const.go 
+cd ../cloud-codepipeline-service/
+ls
+cp ../cloud-codepipeline-runner/config.go .
+ls
+cp ../cloud-codepipeline-runner/const.go .
+ls
+cat main.go 
+rm -f main.go
+cd ..
+cd ..
+ls
+cd libs/
+ls
+ls
+mv signal.go tool/
+ls
+cd tool/
+ls
+ls
+cd ../..
+cd cmds/cloud-codepipeline-service/
+ls
+cd ../
+ls
+cd ..
+ls
+./vet.sh
+ls
+go test src/...
+go test src/dao/
+cd ..
+cd middleware/
+ls
+cp auth.go lang.go
+ls
+cat config.service.yml
+cp config.service.yml config.runner.yml
+ls
+mv env.go ../../dao/
+cd ..
+cd ..
+cd dao/
+ls
+cd ..
+cd ../..
+grep ' HttpForbidde' * -R
+cd ..
+grep 'CACHE_GLOBAL_ACTION' * -R
+cd ../..
+ls
+mkdir k8s
+cd k8s/
+ls
+cp deploy.go deploy_main.go 
+ls
+cd src/
+ls
+cd executor/
+ls
+cd plugin/
+ls
+cp source.go source_main.go
+ls
+cp build.go build_main.go
+ls
+mv main_test.go ~
+ls
+cp ../../datastruct/C//graph/graph.h .
+ls
+cp user.go user-admin.go
+ls
+cp log.go set-header.go
+rm -f set-header.go 
+ls
+mv 3.go temp.go
+cp temp.go 3.go
+cp temp.go 5.go
+cp temp.go 6.go
+cp temp.go 7,go
+mv 7,go 7.go
+cp temp.go 10.go
+cp temp.go 11.go
+cp temp.go 12.go
+cp temp.go 13.go
+cp temp.go 20.go
+cp temp.go 21.go
+cp temp.go 29.go
+cp temp.go 30.go
+cp temp.go 31.go
+grep 'GetSimpleInstances' *
+grep JCLOUD_CONSOLE_BASE_URL *
+grep CodeTypeName *
+cd ..
+cd ..
+grep 'sadd' * -R|grep -v vendor
+grep -i 'sadd' * -R|grep -v vendor
+grep  'SAdd;' * -R|grep -v vendor
+grep  'SAdd' * -R|grep -v vendor
+grep daemon * -R|grep -v vendor
+cd ..
+grep 'StopCacheWorld' * -R
+grep SendNotice * -R
+cd Documents/GITREPO/sky/cloud-codepipeline/
+git br

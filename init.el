@@ -1,3 +1,4 @@
+(menu-bar-mode -1)
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
                     (not (gnutls-available-p))))
@@ -16,7 +17,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (neotree company-go golint go-tag go-autocomplete go-mode))))
+    (go-gen-test find-file-in-project go-playground-cli go-playground slime-company slime neotree company-go golint go-tag go-autocomplete go-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -25,3 +26,6 @@
  )
 (load "~/.emacs.d/go.el")
 (load "~/.emacs.d/neotree.el")
+(load "~/.emacs.d/slime.el")
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
