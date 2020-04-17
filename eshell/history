@@ -1,128 +1,128 @@
-rm -f model.go
-rm -f model.go\~ 
 ls
-rm -f main.go
-cd ..
-cd cmds/
+cd common/
 ls
-cd cloud-codepipeline-runner/
-ls
-cat main.go 
-cp ../cloud-codepipeline-service/main.go .
-cd ..
-cd cloud-codepipeline-api/
-ls
-cd global/
-ls
-cp config.go ../../cloud-codepipeline-runner/
-cp config.go ../../cloud-codepipeline-service/
+mv base-release.go ../mongo/
 cd ..
 ls
+rm -rf common/
+cd mongo/
 cd ..
-cd cloud-codepipeline-runner/
+cd coding/
+cd cmd/http/router/
 ls
-cat ../cloud-codepipeline-api/global/const.go >> const.go 
-cd ../cloud-codepipeline-service/
-ls
-cp ../cloud-codepipeline-runner/config.go .
-ls
-cp ../cloud-codepipeline-runner/const.go .
-ls
-cat main.go 
-rm -f main.go
+cp v1.go v2.go
 cd ..
-cd ..
+cd handle/
 ls
-cd libs/
+cp project.go project_new.go
+cd ../../..
+cd service/store/api/
 ls
+cp api.go api_new.go
 ls
-mv signal.go tool/
+cp api.go base_new.go
+cp api_new.go base_new.go 
 ls
-cd tool/
+cp api_new.go project_new.go
+cp api_new.go pullrequest_new.go
+cp api_new.go comment_new.go
+cp api_new.go task_new.go
+ls
+cp api_new.go label_new.go
+cp api_new.go technology_new.go
+ls
+cp api_new.go milestone_new.go
 ls
 ls
 cd ../..
-cd cmds/cloud-codepipeline-service/
-ls
-cd ../
-ls
 cd ..
+cd cmd/http/
+cd handle/
 ls
-./vet.sh
+mkdir v2
+mv *_new.go v2/
 ls
-go test src/...
-go test src/dao/
-cd ..
-cd middleware/
+rm 0f release.go\~ project_new.go\~ 
 ls
-cp auth.go lang.go
+cd v2/
 ls
-cat config.service.yml
-cp config.service.yml config.runner.yml
 ls
-mv env.go ../../dao/
-cd ..
-cd ..
-cd dao/
+cp ../comment.go .
 ls
-cd ..
+mv project_new.go project.go
+ls
+rm -f comment.go 
 cd ../..
-grep ' HttpForbidde' * -R
 cd ..
-grep 'CACHE_GLOBAL_ACTION' * -R
-cd ../..
+cd http/handle/
 ls
-mkdir k8s
-cd k8s/
+cd v2/
 ls
-cp deploy.go deploy_main.go 
+rm -f user.go
 ls
-cd src/
+rm -f user.go\~ 
 ls
-cd executor/
-ls
-cd plugin/
-ls
-cp source.go source_main.go
-ls
-cp build.go build_main.go
-ls
-mv main_test.go ~
-ls
-cp ../../datastruct/C//graph/graph.h .
-ls
-cp user.go user-admin.go
-ls
-cp log.go set-header.go
-rm -f set-header.go 
-ls
-mv 3.go temp.go
-cp temp.go 3.go
-cp temp.go 5.go
-cp temp.go 6.go
-cp temp.go 7,go
-mv 7,go 7.go
-cp temp.go 10.go
-cp temp.go 11.go
-cp temp.go 12.go
-cp temp.go 13.go
-cp temp.go 20.go
-cp temp.go 21.go
-cp temp.go 29.go
-cp temp.go 30.go
-cp temp.go 31.go
-grep 'GetSimpleInstances' *
-grep JCLOUD_CONSOLE_BASE_URL *
-grep CodeTypeName *
+cd ../../..
 cd ..
+cd service/
+ls
+cd store/
+ls
+cd api/
+ls
+mkdir v2
+ls
+mv *_new.go v2/
+ls
+rm -f project_new.go\~ api_new.go\~ base_new.go\~ release.go\~ 
+ls
+cd v2/
+ls
+cp ../common.go .
+ls
+mv api_new.go api.go
+ls
+mv base_new.go base.go
+ls
+mv comment_new.go comment.go
+ls
+mv project_new.go project.go
+ls
+mv label_new.go label.go
+mv milestone_new.go milestone.go
+ls
+mv technology_new.go technology.go
+mv pullrequest.go
+ls
+mv pullrequest_new.go pullrequest.go
+ls
 cd ..
-grep 'sadd' * -R|grep -v vendor
-grep -i 'sadd' * -R|grep -v vendor
-grep  'SAdd;' * -R|grep -v vendor
-grep  'SAdd' * -R|grep -v vendor
-grep daemon * -R|grep -v vendor
+ls
 cd ..
-grep 'StopCacheWorld' * -R
-grep SendNotice * -R
-cd Documents/GITREPO/sky/cloud-codepipeline/
-git br
+ls
+cd mongo/
+ls
+ls
+mkdir v2
+ls
+cp base.go v2/base.go
+ls
+cp project.go v2/project.go
+cp interface.go v2/interface.go
+ls
+./build_injector.sh 
+mv release/injector-linux-amd64 ../../../minicluster4test/bin/
+ls release/
+./build_injector.sh 
+ls
+cd release/
+ls
+mv injector-linux-amd64 ../../../../minicluster4test/test/
+ls
+ls
+cp repo_contents.go repo_commits.go
+ls
+cp commits.go compare.go
+ls
+ls
+rm -f attachment.go
