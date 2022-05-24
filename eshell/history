@@ -1,128 +1,26 @@
+go run string
+go run string.go 
+go run string.go 
+go run string.go 
+go run slice.go
+cd test/
+go run slice.go 
+go build -race slice.go 
+./slice 
+rm -f slice
+go run channel.go 
+go run channel.go 
+go run channel.go 
+go run channel.go 
+go run channel.go 
+go run channel.go 
+go run channel.go 
+go run channel.go 
+go run channel.go 
+gopls
+go version
+go run -gcflags="-m -m" test/stackCopy.go 
 ls
-cd common/
-ls
-mv base-release.go ../mongo/
-cd ..
-ls
-rm -rf common/
-cd mongo/
-cd ..
-cd coding/
-cd cmd/http/router/
-ls
-cp v1.go v2.go
-cd ..
-cd handle/
-ls
-cp project.go project_new.go
-cd ../../..
-cd service/store/api/
-ls
-cp api.go api_new.go
-ls
-cp api.go base_new.go
-cp api_new.go base_new.go 
-ls
-cp api_new.go project_new.go
-cp api_new.go pullrequest_new.go
-cp api_new.go comment_new.go
-cp api_new.go task_new.go
-ls
-cp api_new.go label_new.go
-cp api_new.go technology_new.go
-ls
-cp api_new.go milestone_new.go
-ls
-ls
-cd ../..
-cd ..
-cd cmd/http/
-cd handle/
-ls
-mkdir v2
-mv *_new.go v2/
-ls
-rm 0f release.go\~ project_new.go\~ 
-ls
-cd v2/
-ls
-ls
-cp ../comment.go .
-ls
-mv project_new.go project.go
-ls
-rm -f comment.go 
-cd ../..
-cd ..
-cd http/handle/
-ls
-cd v2/
-ls
-rm -f user.go
-ls
-rm -f user.go\~ 
-ls
-cd ../../..
-cd ..
-cd service/
-ls
-cd store/
-ls
-cd api/
-ls
-mkdir v2
-ls
-mv *_new.go v2/
-ls
-rm -f project_new.go\~ api_new.go\~ base_new.go\~ release.go\~ 
-ls
-cd v2/
-ls
-cp ../common.go .
-ls
-mv api_new.go api.go
-ls
-mv base_new.go base.go
-ls
-mv comment_new.go comment.go
-ls
-mv project_new.go project.go
-ls
-mv label_new.go label.go
-mv milestone_new.go milestone.go
-ls
-mv technology_new.go technology.go
-mv pullrequest.go
-ls
-mv pullrequest_new.go pullrequest.go
-ls
-cd ..
-ls
-cd ..
-ls
-cd mongo/
-ls
-ls
-mkdir v2
-ls
-cp base.go v2/base.go
-ls
-cp project.go v2/project.go
-cp interface.go v2/interface.go
-ls
-./build_injector.sh 
-mv release/injector-linux-amd64 ../../../minicluster4test/bin/
-ls release/
-./build_injector.sh 
-ls
-cd release/
-ls
-mv injector-linux-amd64 ../../../../minicluster4test/test/
-ls
-ls
-cp repo_contents.go repo_commits.go
-ls
-cp commits.go compare.go
-ls
-ls
-rm -f attachment.go
+mv dash.go dash.el
+go run channel.go 
+go run channel.go 
