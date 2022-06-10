@@ -9,3 +9,6 @@ npm i -g typescript-language-server typescript
 
 # install python lsp
 pip3 install python-lsp-server
+
+# install solidity lsp
+npm i -g solidity-language-server

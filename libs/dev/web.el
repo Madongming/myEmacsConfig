@@ -5,7 +5,8 @@
   ;; use web-mode to handle vue file
   (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
   :config (setq web-mode-enable-current-element-highlight t))
-
+    
+(use-package typescript-mode)
 (use-package json-mode)
 (use-package markdown-mode)
 (use-package protobuf-mode)
