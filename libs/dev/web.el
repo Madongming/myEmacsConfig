@@ -4,6 +4,8 @@
   (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
   ;; use web-mode to handle vue file
   (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
+  ;; use web-mode to handle jsx
+  (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
   :config (setq web-mode-enable-current-element-highlight t))
     
 (use-package typescript-mode)
