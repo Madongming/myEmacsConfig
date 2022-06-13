@@ -4,6 +4,6 @@
 (use-package solidity-mode
   :ensure t
   :mode
-  (("\\.sol\\'" . solidity-mode))
+  (("\\.sol" . solidity-mode))
   :hook
   (solidity-mode . solidity-mode-hook))

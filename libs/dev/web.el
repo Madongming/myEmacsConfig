@@ -4,11 +4,15 @@
   (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
   ;; use web-mode to handle vue file
   (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
-  ;; use web-mode to handle jsx
-  (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
-  :config (setq web-mode-enable-current-element-highlight t))
+  :config (setq web-mode-enable-current-element-highlight t)
+  :custom
+  (indent-tabs-mode nil)
+  (tab-width 2))
     
-(use-package typescript-mode)
+(use-package typescript-mode
+  :custom
+  (indent-tabs-mode nil)
+  (tab-width 2))
 (use-package json-mode)
 (use-package markdown-mode)
 (use-package protobuf-mode)

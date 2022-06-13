@@ -4,12 +4,14 @@
          ("C-c e i" . #'eglot-code-action-organize-imports)
          ("C-c e q" . #'eglot-code-action-quickfix))
   :config
-  ;; (setq eglot-ignored-server-capabilities '(:documentHighlightProvider))
+  ;;(setq eglot-ignored-server-capabilities '(:documentHighlightProvider))
   (defun eglot-actions-before-save()
     (add-hook 'before-save-hook (lambda ()
                                   (call-interactively #'eglot-format)
                                   (call-interactively #'eglot-code-action-organize-imports))))
   (add-to-list 'eglot-server-programs '(web-mode "vls"))
+  (add-to-list 'eglot-server-programs '(solidity-mode . ("solidity-language-server" "--stdio")))
+  (add-to-list 'eglot-server-programs '(typescript-mode . ("typescript-language-server" "--stdio")))
   (add-hook 'eglot--managed-mode-hook #'eglot-actions-before-save)
   (add-hook 'solidity-mode-hook #'eglot-actions-before-save))
 
