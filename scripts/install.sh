@@ -5,11 +5,11 @@ go install golang.org/x/tools/gopls@latest
 go install github.com/cweill/gotests/...@latest
 
 # install js, ts lsp
-yarn global add vscode-langservers-extracted
-yarn global add typescript-language-server typescript
+npm i -g vscode-langservers-extracted
+npm i -g typescript-language-server typescript
 
 # install python lsp
 pip3 install python-lsp-server
 
 # install solidity lsp
-yarn global add solidity-language-server
+npm i -g solidity-language-server
