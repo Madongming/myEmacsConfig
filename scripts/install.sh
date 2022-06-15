@@ -2,6 +2,7 @@
 
 # install go lsp
 go install golang.org/x/tools/gopls@latest
+go install github.com/cweill/gotests/...@latest
 
 # install js, ts lsp
 yarn global add vscode-langservers-extracted
