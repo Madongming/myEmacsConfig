@@ -11,10 +11,7 @@
                                   (call-interactively #'eglot-code-action-organize-imports))))
   (add-to-list 'eglot-server-programs '(web-mode "vls"))
   (add-to-list 'eglot-server-programs '(solidity-mode . ("solidity-language-server" "--stdio")))
-  (add-to-list 'eglot-server-programs '(typescript-mode . ("typescript-language-server" "--stdio")))
-  (add-hook 'eglot--managed-mode-hook #'eglot-actions-before-save)
-  (add-hook 'solidity-mode-hook #'eglot-actions-before-save))
-
+  (add-hook 'eglot--managed-mode-hook #'eglot-actions-before-save))
 
 (load "./dev/golang.el")
 (load "./dev/python.el")
