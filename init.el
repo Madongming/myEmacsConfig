@@ -1,8 +1,8 @@
 (add-to-list 'load-path
 	     (expand-file-name (concat user-emacs-directory "libs")))
+
+(require 'init-package)
 (require 'startup)
-(require 'source-list)
-(require 'init-package) ;; use-pacakge
 (require 'manager)
 (require 'dev)
 
