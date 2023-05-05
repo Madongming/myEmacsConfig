@@ -1,5 +1,5 @@
 (use-package eglot
-  :hook ((go-mode js-mode python-mode web-mode typescript-mode solidity-mode) . eglot-ensure)
+  :hook ((go-mode js-mode python-mode web-mode typescript-mode solidity-mode rust-mode) . eglot-ensure)
   :bind (("C-c e f" . #'eglot-format)
          ("C-c e i" . #'eglot-code-action-organize-imports)
          ("C-c e q" . #'eglot-code-action-quickfix))
@@ -11,12 +11,18 @@
                                   (call-interactively #'eglot-code-action-organize-imports))))
   (add-to-list 'eglot-server-programs '(web-mode "vls"))
   (add-to-list 'eglot-server-programs '(solidity-mode . ("solidity-language-server" "--stdio")))
+  (add-to-list 'eglot-server-programs '(rust-mode . ("rust-analyzer")))
   (add-hook 'eglot--managed-mode-hook #'eglot-actions-before-save))
+  ;;(setq debug-on-error t))
+(add-hook 'prog-mode-hook 'copilot-mode)
 
 (load "./dev/golang.el")
 (load "./dev/python.el")
 (load "./dev/web.el")
 (load "./dev/dash.el")
 (load "./dev/solidity.el")
+(load "./dev/magit.el")
+(load "./dev/rust.el")
+(load "./dev/copilot.el")
 
 (provide 'dev)

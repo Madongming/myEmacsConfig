@@ -2,8 +2,8 @@
 
 (setq inhibit-startup-screen t)
 
-(setq indent-tabs-mode nil)
-(setq tab-width 4)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
 
 ;; Settings for Emacs 28+
 (when (and (fboundp 'native-comp-available-p)

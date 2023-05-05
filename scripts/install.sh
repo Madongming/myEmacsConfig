@@ -13,3 +13,6 @@ pip3 install python-lsp-server
 
 # install solidity lsp
 npm i -g solidity-language-server
+
+# instrall rust lsp
+brew install rust-analyzer

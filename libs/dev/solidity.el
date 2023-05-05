@@ -1,5 +1,5 @@
 (defun solidity-mode-hook ()
-  (setq c-basic-offset 2))
+  (setq c-basic-offset 4))
 ;; solodity-mode
 (use-package solidity-mode
   :ensure t
