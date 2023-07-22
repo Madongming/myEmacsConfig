@@ -5,7 +5,7 @@
  '(quelpa-use-package
    :fetcher git
    :url "https://github.com/quelpa/quelpa-use-package.git"))
-(require 'quelpa-use-package)
+
 (unless (bound-and-true-p package--initialized)
   (package-initialize))
 
@@ -32,5 +32,6 @@
       use-package-expand-minimally t
       use-package-verbose t)
 (require 'use-package)
+(require 'quelpa-use-package)
 
 (provide 'init-package)
