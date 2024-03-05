@@ -9,3 +9,7 @@
 /elpa/*
 
 /eshell/*
+
+eln-cache/*
+quelpa/*
+transient/*
