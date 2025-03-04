@@ -24,5 +24,6 @@
 (load "./dev/magit.el")
 (load "./dev/rust.el")
 (load "./dev/copilot.el")
+(load "./dev/ollama.el")
 
 (provide 'dev)
